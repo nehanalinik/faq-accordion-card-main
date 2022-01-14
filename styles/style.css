@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+html {
+  font-size: 12px;
+}
+
+*,
+*::after,
+*::before,
+button,
+ul,
+li,
+input {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(to bottom, #af67e9, #6565e7);
+  background-repeat: no-repeat;
+}
+
+.main__container {
+  width: 400px;
+  max-width: 400px;
+  background-color: #fff;
+  margin: 1rem;
+  padding: 2rem;
+  -webkit-box-shadow: 0rem 1rem 2.5rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0rem 1rem 2.5rem rgba(0, 0, 0, 0.5);
+  border-radius: 2rem;
+}
+
+.left__img {
+  display: none;
+}
+
+.top__img {
+  position: relative;
+}
+
+.top__img .illustration {
+  width: 150px;
+  max-width: 150px;
+  position: absolute;
+  top: -7.5rem;
+  right: 8.5rem;
+}
+
+.top__img .shadow {
+  width: 150px;
+  max-width: 150px;
+  position: absolute;
+  top: -1.75rem;
+  left: 8.5rem;
+}
+
+.faq__container .faq__title {
+  padding: 5.15rem 0.5rem 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1d1e35;
+}
+
+.faq__container .questions__group {
+  padding-bottom: 2rem;
+}
+
+.faq__container .question__item {
+  border-bottom: 1px solid #e7e7e9;
+}
+
+.faq__container .question__item .question__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.faq__container .question__item .question__header .question__title {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #4a4b5e;
+  padding: 1rem 0.4rem;
+  cursor: pointer;
+  -webkit-transition: 0.25s ease-in-out all;
+  transition: 0.25s ease-in-out all;
+}
+
+.faq__container .question__item .question__header .question__title:hover {
+  color: #f47c57;
+}
+
+.faq__container .question__item .question__header .arrow {
+  cursor: pointer;
+}
+
+.faq__container .question__item .question__content {
+  overflow: hidden;
+  height: 0;
+}
+
+.faq__container .question__item .question__description {
+  color: #787887;
+  padding: 0.4rem 0.3rem 1.5rem;
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.faq__container .question__item,
+.faq__container .question__header,
+.faq__container .question__title,
+.faq__container .arrow,
+.faq__container .question__content,
+.faq__container .question__description {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.accordion-open .arrow {
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+}
+
+.accordion-open .question__title {
+  color: #0f0f0f !important;
+  font-weight: 700 !important;
+}
+
+.footer__container {
+  margin-top: 2.5rem;
+}
+
+.footer__container .attribution {
+  font-size: 1.15rem;
+  text-align: center;
+}
+
+.footer__container .attribution a {
+  color: #d8dffd;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 375px) {
+  .left__img {
+    display: none;
+  }
+  .main__container {
+    width: 300px;
+    max-width: 300px;
+  }
+  .main__container .top__img .illustration {
+    right: 3.5rem;
+  }
+  .main__container .top__img .shadow {
+    left: 5rem;
+  }
+}
+
+@media screen and (min-width: 410px) and (max-width: 698px) {
+  .left__img {
+    display: none;
+  }
+  .main__container {
+    width: 350px;
+    max-width: 350px;
+  }
+  .main__container .top__img .illustration {
+    right: 5.5rem;
+  }
+  .main__container .top__img .shadow {
+    left: 7rem;
+  }
+}
+
+@media screen and (min-width: 698px) {
+  .main__container {
+    width: 600px;
+    max-width: 600px;
+    padding: 0 4.2rem 0rem 0rem;
+  }
+  .faq__container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+  .faq__container .faq__title {
+    padding: 2.75rem 0.5rem 2rem;
+    text-align: left !important;
+  }
+  .faq__container .question__item:last-child {
+    margin-bottom: 2rem;
+  }
+  .images {
+    overflow: hidden;
+  }
+  .images .top__img {
+    display: none;
+  }
+  .images .left__img {
+    display: block;
+    position: relative;
+  }
+  .images .left__img .pattern {
+    width: 650px;
+    position: absolute;
+    top: -14.6rem;
+    right: 2.6rem;
+  }
+  .images .left__img .box {
+    width: 120px;
+    position: absolute;
+    top: 14rem;
+    left: -5rem;
+    z-index: 1;
+  }
+  .images .left__img .desktop__illustration {
+    width: 300px;
+    position: absolute;
+    left: -4rem;
+    top: 7rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .main__container {
+    width: 800px;
+    min-width: 800px;
+    padding: 0rem 4.5rem 0rem 0rem;
+  }
+  .faq__container {
+    gap: 1.75rem;
+  }
+  .faq__container .question__item:last-child {
+    margin-bottom: 2.5rem;
+  }
+  .left__img .desktop__illustration {
+    width: 350px !important;
+    top: 4rem !important;
+    left: -4.2rem !important;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
+  .main__container {
+    width: 900px;
+    min-width: 900px;
+    padding: 0rem 6.5rem 0rem 0rem;
+  }
+  .faq__container {
+    gap: 2.75rem;
+  }
+  .faq__container .question__item:last-child {
+    margin-bottom: 3.5rem;
+  }
+  .left__img .pattern {
+    right: 4.8rem !important;
+  }
+  .left__img .desktop__illustration {
+    width: 400px !important;
+    top: 2rem !important;
+    left: -4.8rem !important;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main__container {
+    width: 1000px;
+    min-width: 1000px;
+    padding: 0rem 7.5rem 0rem 0rem;
+  }
+  .faq__container {
+    gap: 3rem;
+  }
+  .faq__container .question__item:last-child {
+    margin-bottom: 4.5rem;
+  }
+  .left__img .pattern {
+    right: 8.8rem !important;
+  }
+  .left__img .desktop__illustration {
+    width: 410px !important;
+    top: 1.7rem !important;
+    left: -5.5rem !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
