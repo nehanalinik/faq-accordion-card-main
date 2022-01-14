@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://github.com/nehanalinik/faq-accordion-card-main)
+- Live Site URL: [Live Site URL](https://nehanalinik.github.io/faq-accordion-card-main/)
 
 ## My process
 
@@ -62,7 +62,7 @@ Love to do more project like this, getting use to preprocessors.
 
 ### Useful resources
 
-- [Example resource 1](<https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient()>) - This helped me for getting understand linear gradients.
+- [Resource](<https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient()>) - This helped me for getting understand linear gradients.
 
 ## Author
 
