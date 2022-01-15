@@ -305,7 +305,7 @@ body {
     margin-bottom: 3.5rem;
   }
   .not__hidden .box {
-    top: 14rem;
+    top: 14rem !important;
   }
   .left__img .pattern {
     right: 4.8rem !important;
@@ -331,7 +331,7 @@ body {
     margin-bottom: 4.5rem;
   }
   .not__hidden .box {
-    top: 15rem;
+    top: 14rem;
   }
   .left__img .pattern {
     right: 8.8rem !important;
