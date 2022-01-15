@@ -52,8 +52,12 @@ body {
   background-color: #fff;
   margin: 1rem;
   padding: 2rem;
-  box-shadow: 0rem 1rem 2.5rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.2);
   border-radius: 2rem;
+}
+
+.not__hidden {
+  display: none;
 }
 .left__img {
   display: none;
@@ -156,6 +160,9 @@ body {
 //! =============BREAKING POINTS==============
 
 @media screen and (max-width: 375px) {
+  .not__hidden {
+    display: none;
+  }
   .left__img {
     display: none;
   }
@@ -175,6 +182,9 @@ body {
 }
 
 @media screen and (min-width: 410px) and (max-width: 698px) {
+  .not__hidden {
+    display: none;
+  }
   .left__img {
     display: none;
   }
@@ -203,16 +213,28 @@ body {
   .faq__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0.75rem;
+    column-gap: 0.75rem;
     .faq__title {
       padding: 2.75rem 0.5rem 2rem;
       text-align: left !important;
     }
-
     .question__item {
       &:last-child {
         margin-bottom: 2rem;
       }
+    }
+  }
+
+  .not__hidden {
+    display: block;
+    position: relative;
+    .box {
+      overflow: visible;
+      position: absolute;
+      width: 120px;
+      top: 14.5rem;
+      left: -4.75rem;
+      z-index: 1;
     }
   }
 
@@ -230,13 +252,7 @@ body {
         top: -14.6rem;
         right: 2.6rem;
       }
-      .box {
-        width: 120px;
-        position: absolute;
-        top: 14rem;
-        left: -5rem;
-        z-index: 1;
-      }
+
       .desktop__illustration {
         width: 300px;
         position: absolute;
@@ -244,6 +260,11 @@ body {
         top: 7rem;
       }
     }
+  }
+
+  .not__hidden,
+  .images {
+    grid-column: 1/2;
   }
 }
 
@@ -255,7 +276,7 @@ body {
   }
 
   .faq__container {
-    gap: 1.75rem;
+    column-gap: 1.75rem;
 
     .question__item {
       &:last-child {
@@ -263,7 +284,11 @@ body {
       }
     }
   }
-
+  .not__hidden {
+    .box {
+      top: 13.95rem;
+    }
+  }
   .left__img {
     .desktop__illustration {
       width: 350px !important;
@@ -281,12 +306,18 @@ body {
   }
 
   .faq__container {
-    gap: 2.75rem;
+    column-gap: 2.75rem;
 
     .question__item {
       &:last-child {
         margin-bottom: 3.5rem;
       }
+    }
+  }
+
+  .not__hidden {
+    .box {
+      top: 14rem;
     }
   }
 
@@ -310,7 +341,7 @@ body {
   }
 
   .faq__container {
-    gap: 3rem;
+    column-gap: 3rem;
 
     .question__item {
       &:last-child {
@@ -318,7 +349,11 @@ body {
       }
     }
   }
-
+  .not__hidden {
+    .box {
+      top: 15rem;
+    }
+  }
   .left__img {
     .pattern {
       right: 8.8rem !important;
